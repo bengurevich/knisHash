@@ -1,11 +1,11 @@
 .love-note {
   background-color: #f1b590;
-  border: 2px solid #eb997c;
-  border-radius: 20px;
-  padding: 40px;
-  max-width: 600px;
+  border: 1.6px solid #eb997c;
+  border-radius: 16.0px;
+  padding: 32.0px;
+  max-width: 480.0px;
   font-family: 'Special Gothic Expanded One', sans-serif;
-  box-shadow: 0 10px 30px rgba(255, 102, 178, 0.3);
+  box-shadow: 0 8.0px 24.0px rgba(255, 102, 178, 0.3);
   text-align: left;
   color: #f8f9f5;
   line-height: 1.8;
@@ -14,15 +14,15 @@
 
 .love-note::before {
   content: "💌";
-  font-size: 3rem;
+  font-size: 2.4rem;
   position: absolute;
-  top: -30px;
-  left: 20px;
+  top: -24.0px;
+  left: 16.0px;
 }
 
 .love-note h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.6rem;
+  margin-bottom: 16.0px;
   text-align: center;
   color: #f8f9f5;
 }
@@ -35,31 +35,31 @@ body {
   }
   
   h1 {
-    margin-top: 40px;
-    font-size: 6rem;
+    margin-top: 32.0px;
+    font-size: 4.8rem;
     color: #f1b590;
     animation: bounce 2s infinite;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
    h3 {
-    margin-top: 40px;
-    font-size: 3rem;
+    margin-top: 32.0px;
+    font-size: 2.4rem;
     color: #f1b590;
     animation: bounce 2s infinite;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+    0.0%, 80.0% { transform: translateY(0); }
+    40.0% { transform: translateY(-8.0px); }
   }
   
   .popmart-zone {
-    margin-top: 40px;
+    margin-top: 32.0px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 32.0px;
   }
   
   .popmart-item {
@@ -78,10 +78,10 @@ body {
   }
   
   .popmart-item img {
-    width: 100px;
+    width: 80.0px;
     height: auto;
-    border-radius: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 16.0px;
+    box-shadow: 0 4.0px 12.0px rgba(0, 0, 0, 0.2);
   }
   
   .popmart-item input[type="radio"] {
@@ -90,13 +90,13 @@ body {
   
   .popmart-item input[type="radio"]:checked + img {
     transform: scale(1.2) rotate(-5deg);
-    box-shadow: 0 8px 25px #f1b590;
+    box-shadow: 0 6.4px 20.0px #f1b590;
   }
   
   @keyframes floaty {
-    0% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-10px) rotate(2deg); }
-    100% { transform: translateY(0px) rotate(0deg); }
+    0.0% { transform: translateY(0.0px) rotate(0deg); }
+    40.0% { transform: translateY(-8.0px) rotate(2deg); }
+    80.0% { transform: translateY(0.0px) rotate(0deg); }
   }
 
   .navbar-nav .nav-item img:hover {
@@ -114,20 +114,20 @@ body {
 
 
   .play-btn {
-    width: 250px;
+    width: 200.0px;
     transition: transform 0.3s ease, filter 0.3s ease;
     cursor: pointer;
   }
   
   .play-btn:hover {
     transform: scale(1.15) rotate(5deg);
-    filter: brightness(1.2) drop-shadow(0 0 10px rgba(255, 150, 200, 0.6));
+    filter: brightness(1.2) drop-shadow(0 0 8.0px rgba(255, 150, 200, 0.6));
   }
   
   .click-hint {
     font-style: italic;
     color: #555;
-    margin-top: 10px;
+    margin-top: 8.0px;
     opacity: 0;
     transition: opacity 0.5s ease;
   }
@@ -148,8 +148,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 80.0%;
+  height: 80.0%;
   pointer-events: none;
   z-index: 0;
   overflow: hidden;
@@ -157,29 +157,29 @@ body {
 
 .floating {
   position: absolute;
-  width: 180px; /* Make them bigger */
+  width: 144.0px; /* Make them bigger */
   opacity: 0.4;
   z-index: 0;
 }
 
   /* Optional: vary positions for each image */
-  .lily1 { top: 10%; left: 5%; animation-delay: 0s; }
-  .lily2 { top: 20%; left: 80%; animation-delay: 5s; }
-  .lily3 { top: 40%; left: 30%; animation-delay: 10s; }
-  .lily4 { top: 80%; left: 60%; animation-delay: 18s; }
-  .lily5 { top: 20%; left: 90%; animation-delay: 4s; }
-  .lily6 { top: 40%; left: 20%; animation-delay: 8s; }
-  .lily7 { top: 10%; left: 60%; animation-delay: 12s; }
+  .lily1 { top: 8.0%; left: 4.0%; animation-delay: 0s; }
+  .lily2 { top: 16.0%; left: 64.0%; animation-delay: 5s; }
+  .lily3 { top: 32.0%; left: 24.0%; animation-delay: 10s; }
+  .lily4 { top: 64.0%; left: 48.0%; animation-delay: 18s; }
+  .lily5 { top: 16.0%; left: 72.0%; animation-delay: 4s; }
+  .lily6 { top: 32.0%; left: 16.0%; animation-delay: 8s; }
+  .lily7 { top: 8.0%; left: 48.0%; animation-delay: 12s; }
   
   @keyframes float {
-    0%   { transform: translateY(0) rotate(0deg); }
-    50%  { transform: translateY(-40px) rotate(10deg); }
-    100% { transform: translateY(0) rotate(0deg); }
+    0.0%   { transform: translateY(0) rotate(0deg); }
+    40.0%  { transform: translateY(-32.0px) rotate(10deg); }
+    80.0% { transform: translateY(0) rotate(0deg); }
   }
   
 
   .arrow-hint {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   color: #555;
   animation: bounce 1.2s infinite;
   opacity: 0;
@@ -192,8 +192,8 @@ body {
 }
 
 @keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  0.0%, 80.0% { transform: translateY(0); }
+  40.0% { transform: translateY(-8.0px); }
 }
 
 
