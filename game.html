@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+        </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>mexico (she won't see this)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="game.css">
+  </head>
+  <body style="background-color: #f8f9f5;">
+
+    <nav class="navbar px-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="/assets/logo.png" class="d-inline-block align-top" alt="">
+      </a>
+      <ul class="navbar-nav ms-auto flex-row">
+        <li class="nav-item">
+            <a href="contact.html"><img src="/assets/contact.png" width="170"class="d-inline-block align-top" alt="" ></a>
+        </li>
+      </ul>
+    </nav>
+
+<div class="container text-center mt-5">
+  <h1>Guess the country Sneesly</h1>
+  <h3>"She is so smart and talented... BUTTTTTT"</h2>
+  <img src="/assets/mexico.png" alt="Guess the country" class="img-fluid my-3" width="800" />
+
+  <input type="text" id="countryInput" class="form-control w-50 mx-auto" placeholder="Type your guess here..." />
+  <button id="submitBtn" class="btn btn-dark mt-3">Submit Answer</button>
+
+  <p id="feedback" class="mt-3"></p>
+</div>
+
+<script>
+  const correctAnswer = "mexico";
+  const input = document.getElementById("countryInput");
+  const button = document.getElementById("submitBtn");
+  const feedback = document.getElementById("feedback");
+
+  button.addEventListener("click", () => {
+    const userGuess = input.value.trim().toLowerCase();
+
+    if (userGuess === correctAnswer) {
+      feedback.textContent = "You did it Joe";
+      feedback.style.color = "green";
+
+      setTimeout(() => {
+        window.location.href = "blindbox.html"; 
+      }, 1500);
+    } else {
+      feedback.textContent = "Ask me for a hint.";
+      feedback.style.color = "red";
+    }
+  });
+</script>
+<h3>"How are you driving to Europe?" - Lily</h3>
+<div class="travel-banner">
+  <span class="label">USA</span>
+  <div class="car-track">
+    <img src="/assets/car.png" alt="Car" class="car" />
+  </div>
+  <span class="label">EUROPE</span>
+</div>
+<h1>"How are you driving to Europe?" - Lily</h1>
+

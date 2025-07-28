@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap');
+        </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>consumerism</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="blindbox.css">
+  </head>
+  <body style="background-color: #f8f9f5;">
+
+    <nav class="navbar px-4">
+      <a class="navbar-brand" href="index.html">
+        <img src="/assets/logo.png" class="d-inline-block align-top" alt="">
+      </a>
+      <ul class="navbar-nav ms-auto flex-row">
+        <li class="nav-item">
+            <a href="contact.html"><img src="/assets/contact.png" width="170"class="d-inline-block align-top" alt="" ></a>
+        </li>
+      </ul>
+    </nav>
+<div class="container text-center mt-5">
+  <h1>One question I have to ask</h1>
+  <h3>Pick your favorite blind box that you want next</h3>
+
+  <form id="blindBoxForm">
+    <div class="blind-box-arc">
+      <label class="blind-box-option">
+        <input type="radio" name="blindBox" value="Labubu" />
+        <img src="/assets/657FDD97-487B-4A13-9794-4E8135BA78A9.webp" alt="Molly" />
+        <span>Lafufu</span>
+      </label>
+      <label class="blind-box-option">
+        <input type="radio" name="blindBox" value="Sonnnyy" />
+        <img src="/assets/dreams-usa-surprise-sonny-angel-fruit-3-figure-surprise-box-30893341016245_2048x.webp" alt="Skull Panda" />
+        <span>Sonnnyy</span>
+      </label>
+      <label class="blind-box-option">
+        <input type="radio" name="blindBox" value="Dimoo" />
+        <img src="/assets/tumblr_b1900ab332344182e7c17ab17295807b_d73e3cd6_400.png" alt="Dimoo" />
+        <span>Dimoo</span>
+      </label>
+    </div>
+
+    <div class="mt-4">
+      <label for="customAnswer" class="form-label">Or write in your favorite:</label>
+      <input type="text" id="customAnswer" class="form-control w-50 mx-auto" placeholder="Your answer..." />
+    </div>
+
+    <button type="submit" class="btn btn-pink mt-4">Submit</button>
+    <p id="finalResponse" class="mt-3"></p>
+  </form>
+
+  <h3>graphic design is my passion</h3>
+
+  <script>
+  document.getElementById('blindBoxForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const selected = document.querySelector('input[name="blindBox"]:checked');
+    const typed = document.getElementById('customAnswer').value.trim();
+    const response = document.getElementById('finalResponse');
+
+    let answer = "";
+
+    if (typed) {
+      answer = typed;
+    } else if (selected) {
+      answer = selected.value;
+    }
+
+    if (answer) {
+      response.textContent = `Noted. `;
+      response.style.color = "green";
+
+      // Redirect to the next page after a short delay
+      setTimeout(() => {
+        window.location.href = "ending.html"; // Replace with your actual page
+      }, 1800);
+    } else {
+      response.textContent = `Please pick or type an answer`;
+      response.style.color = "red";
+    }
+  });
+</script>
+
+</div>
+
+
+</body>
+
+
